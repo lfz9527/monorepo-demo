@@ -1,0 +1,27 @@
+{
+  // 提供 schema 校验和自动补全
+  "$schema": "https://turbo.build/schema.json",
+  // 终端 UI（Text UI）模式：
+  "ui": "tui",
+  // 任务编排
+  "tasks": {
+    "build": {
+      // 当前包build 之前,先执行依赖包的build
+      "dependsOn": ["^build"],
+      // 输出目录
+      "outputs": ["dist/**"],
+      "cache": true
+    },
+    "dev": {
+      "cache": false,
+      // 任务不会自动结束
+      "persistent": true
+    },
+    "lint": {
+      "cache": true
+    },
+    "clean": {
+      "cache": false
+    }
+  }
+}

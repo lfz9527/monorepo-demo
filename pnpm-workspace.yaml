@@ -1,9 +1,9 @@
 packages:
   # 应用项目
-  - "apps/*"
+  - apps/*
   # 共享包
-  - "packages/*"
+  - packages/*
   # 开发工具
-  - "tools/*"
-  # 排除模板文件
-  - "!**/templates/**"
+  - tools/*
+  # 构建
+  - build
