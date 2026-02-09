@@ -11,6 +11,7 @@
   "license": "ISC",
   "packageManager": "pnpm@10.14.0",
   "dependencies": {
-    "@xt-shared/utils": "workspace:*"
+    "@xt-shared/utils": "workspace:*",
+    "react": "^19.2.4"
   }
 }
